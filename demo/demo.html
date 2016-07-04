@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+    <head>
+
+        <title>SONP Scroll DEMO</title>
+
+        <meta charset="utf-8">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script src="../sonpScroll.js"></script>
+
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                border: none;
+            }
+
+            #first{
+                background-color: #3595a1;
+            }
+
+            #first p{
+                color: rgb(255, 255, 255);
+                text-align: center;
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size: 37px;
+                padding: 60px;
+            }
+            #first a{
+                width: 160px;
+                margin: auto;
+                display: block;
+                color: #FFF;
+                text-decoration: none;
+                font-family: Impact, "Arial Black",serif;
+                font-size: 50px;
+                text-align: center;
+                background-color: #CF6969;
+            }
+
+            #first a:hover{
+                background-color: #FFF;
+                color: #CF6969;
+                cursor: pointer;
+            }
+
+            #second{
+                background-color: cornflowerblue;
+                background-image: url("images/demo.jpg");
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #second p{
+                font-size: 40px;
+                color: #FFF;
+                padding-left: 300px;
+                font-family: Helvetica, Arial, sans-serif;
+                padding-top: 60px;
+                border-bottom: 1px dashed #FFF;
+                width: 300px;
+            }
+
+            #second #example{
+                position: relative;
+                float: right;
+                top: 10%;
+                width: auto;
+                padding: 40px;
+                right: 55px;
+            }
+            #finale{
+                background-color: #cf6969;
+                box-shadow: 0 0 66px 34px;
+                -webkit-box-shadow: 0 0 66px 34px;
+                -ms-box-shadow: 0 0 66px 34px;
+            }
+
+            #finale footer{
+                position: relative;
+                display: table;
+                margin: auto;
+                padding-top: 50px;
+            }
+            #finale footer div{
+                display: table-cell;
+                display: -moz-grid;
+                padding: 20px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            #finale a{
+                text-decoration: none;
+                color: #FFF;
+                font-family: Helvetica, Arial,sans-serif;
+            }
+            #finale img{
+                width: 64px;
+                cursor: pointer;
+                -webkit-box-shadow: 0 0 66px 34px;
+                -ms-box-shadow: 0 0 66px 34px;
+                -moz-box-shadow: 0 0 66px 34px;
+                -webkit-border-radius: 90px;
+                border-radius: 90px;
+                box-shadow: 0 0 26px 2px #000;
+            }
+
+            #finale img:hover{
+                transform: rotate(30deg);
+                -webkit-transform: rotate(30deg);
+                -moz-transform: rotate(30deg);
+                -ms-transform: rotate(30deg);
+
+            }
+
+        </style>
+    </head>
+
+    <body class="no-scroll">
+        <div class="sonp-section sonp-middle" id="first">
+            <p>
+                Smooth ONe Page Scroll - [SONP]
+            </p>
+            <a onclick="$('.sonp-section').nextPage()">Tour</a>
+        </div>
+
+        <div class="sonp-section sonp-full sonp-parallax" id="second">
+            <div id="example">
+                <script src="https://gist.github.com/anonymous/22b4cea8375cd3abb9eed7f72df98bd4.js"></script>
+            </div>
+            <p>One page</p>
+            <p>Parallax effect</p>
+            <p>Smooth scroll</p>
+            <p>Elegance</p>
+            <p>One JS</p>
+        </div>
+
+        <div class="sonp-section sonp-small" id="finale">
+            <footer>
+                <div><a href="https://www.github.com/"><img src="images/github-icon.png" class="icon">GitHub</a></div>
+                <div><a href="https://www.github.com/"><img src="images/readme-icon.png" class="icon">README</a></div>
+                <div><a href="http://www.taleslunadev.com/"><img src="images/site-icon.png" class="icon">Author</a></div>
+            </footer>
+        </div>
+    </body>
+</html>
